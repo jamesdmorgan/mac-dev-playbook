@@ -3,87 +3,58 @@ downloads: ~/.ansible-downloads/
 
 configure_sudoers: yes
 
-dotfiles_repo: https://github.com/geerlingguy/dotfiles.git
+dotfiles_repo: https://github.com/jamesdmorgan/dotfiles.git
 dotfiles_repo_local_destination: ~/Dropbox/Development/GitHub/dotfiles
 dotfiles_files:
   - .bash_profile
   - .gitconfig
   - .gitignore
   - .inputrc
-  - .osx
+#  - .osx
   - .vimrc
 
 homebrew_installed_packages:
   - ansible
   - autoconf
   - bash-completion
+  - brew-cask
   - docker
-  - docker-compose
   - docker-machine
   - gettext
   - git
-  - go
   - gpg
   - hub
   - httpie
+  - htop
   - iperf
-  - libdvdcss
   - libevent
+  - kdiff3
+  - ncdu
+  - openssl
   - packer
   - python
-  - sqlite
-  - mcrypt
-  - mysql
-  - npm
-  - nvm
-  - php56
-  - php56-mcrypt
-  - php56-xdebug
-  - ssh-copy-id
-  - cowsay
-  - ios-sim
-  - readline
-  - subversion
-  - kdiff3
-  - openssl
   - pv
-  - drush
+  - readline
+  - sqlite
+  - ssh-copy-id
+  - tig
   - wget
   - wrk
-  - brew-cask
 
 homebrew_taps:
   - caskroom/cask
   - homebrew/binary
   - homebrew/dupes
-  - homebrew/php
   - homebrew/versions
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
-  - adium
-  - bettertouchtool
   - google-chrome
   - dropbox
   - fing
-  - firefox
-  - handbrake
-  - karabiner
-  - limechat
-  - licecap
   - macvim
-  - menumeters
-  - nvalt
-  - sequel-pro
-  - skype
-  - skitch
-  - seil
   - sublime-text # Note - Sublime Text 2 only, at this time...
-  - textmate
-  - timemachineeditor
-  - tower
-  - transmit
   - vagrant
   - vagrant-manager
   - vlc
-  - virtualbox
+  #- virtualbox
