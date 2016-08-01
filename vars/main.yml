@@ -51,12 +51,15 @@ homebrew_taps:
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
+  - alfred
   - google-chrome
   - dropbox
   - fing
+  - flux # f.lux adapt the colour of the display
   - iterm2
   - lastpass
   - macvim
+  - slack
   - spotify
   - sublime-text3 # managed seperately in role
   - vagrant
