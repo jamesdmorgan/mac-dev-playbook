@@ -6,7 +6,9 @@ configure_sudoers: yes
 dotfiles_repo: https://github.com/jamesdmorgan/dotfiles.git
 dotfiles_repo_local_destination: ~/Dropbox/Development/GitHub/dotfiles
 dotfiles_files:
+  - .aliases
   - .bash_profile
+  - .bash_prompt
   - .gitconfig
   - .gitignore
   - .inputrc
@@ -53,7 +55,7 @@ homebrew_cask_apps:
   - dropbox
   - fing
   - macvim
-  - sublime-text # Note - Sublime Text 2 only, at this time...
+  - sublime-text3
   - vagrant
   - vagrant-manager
   - vlc

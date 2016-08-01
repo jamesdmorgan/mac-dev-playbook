@@ -8,6 +8,7 @@
   roles:
     - geerlingguy.homebrew
     - geerlingguy.dotfiles
+    - { role: sublimetext, tags: sublimetext }
 
   tasks:
     - include: tasks/ansible-setup.yml

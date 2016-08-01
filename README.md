@@ -18,58 +18,6 @@ This is a work in progress, and is mostly a means for me to document my current 
   4. Run the command `$ ansible-galaxy install -r requirements.yml` inside this directory to install required Ansible roles.
   5. Run `ansible-playbook main.yml -i inventory -u [username] -U [username] --ask-sudo-pass` from the same directory as this README file (substitute `[username]` for your macOS account username). Enter your account password when prompted.
 
-## Included Applications / Configuration
-
-Applications (installed with Homebrew Cask):
-
-  - Adium
-  - BetterTouchTool
-  - Google Chrome
-  - Dropbox
-  - Firefox
-  - Handbrake
-  - Homebrew
-  - Karabiner
-  - LICEcap
-  - MacVim
-  - Menu Meters
-  - nvALT
-  - Sequel Pro (MySQL client)
-  - Skype
-  - Skitch
-  - Seil
-  - Sublime Text
-  - TextMate
-  - TimeMachineEditor
-  - Tower (Git client)
-  - Transmit (S/FTP client)
-  - Vagrant (+ Vagrant Manager)
-  - VirtualBox
-  - VLC
-
-Packages (installed with Homebrew):
-
-  - ansible
-  - autoconf
-  - gettext
-  - libevent
-  - packer
-  - python
-  - sqlite
-  - mysql
-  - php56 (+ php56-xdebug)
-  - ssh-copy-id
-  - cowsay
-  - ios-sim
-  - readline
-  - subversion
-  - kdiff3
-  - openssl
-  - pv
-  - drush
-  - wget
-  - brew-cask
-
 My [dotfiles](https://github.com/geerlingguy/dotfiles) are also installed into the current user's home directory, including the `.osx` dotfile for configuring many aspects of macOS for better performance and ease of use.
 
 Finally, there are a few other preferences and settings added on for various apps and services.
@@ -95,44 +43,9 @@ These are mostly direct download links, some are more difficult to install becau
 
   - [iShowU HD](http://downloads.shinywhitebox.com/iShowU_HD_Pro_2.3.7.dmg)
 
-### Configuration to be added:
-
-  - I have vim configuration in the repo, but I still need to add the actual installation:
-    ```
-    mkdir -p ~/.vim/autoload
-    mkdir -p ~/.vim/bundle
-    cd ~/.vim/autoload
-    curl https://raw.githubusercontent.com/tpope/vim-pathogen/master/autoload/pathogen.vim > pathogen.vim
-    cd ~/.vim/bundle
     git clone git://github.com/scrooloose/nerdtree.git
-    ```
 
-### Apps only available via the App Store
-
-I also use the following apps at least once or twice per week, but unfortunately, as the Mac App Store is not able to be controlled via CLI, or any other way I can find (so far), I have to manually install all of these apps from within the App Store application.
-
-  - Tweetbot
-  - RadarScope
-  - Pixelmator
-  - Quick Resizer
-  - 1Password
-  - DaisyDisk
-  - Byword
-  - Aperture
-  - Pages
-  - Keynote
-  - Numbers
-
-There are a couple other apps I'm leaving out of the list, like Microsoft Word, because I normally don't install them unless/until I need them.
 
 ## Testing the Playbook
 
 Many people have asked me if I often wipe my entire workstation and start from scratch just to test changes to the playbook. Nope! Instead, I posted instructions for how I build a [Mac OS X VirtualBox VM](https://github.com/geerlingguy/mac-osx-virtualbox-vm), on which I can continually run and re-run this playbook to test changes and make sure things work correctly.
-
-## Ansible for DevOps
-
-Check out [Ansible for DevOps](http://www.ansiblefordevops.com/), which will teach you how to do some other amazing things with Ansible.
-
-## Author
-
-[Jeff Geerling](http://jeffgeerling.com/), 2014 (originally inspired by [MWGriffin/ansible-playbooks](https://github.com/MWGriffin/ansible-playbooks)).
