@@ -60,3 +60,9 @@ homebrew_cask_apps:
   - vagrant-manager
   - vlc
   #- virtualbox
+
+python_packages:
+  - awscli
+  - boto3
+  - pyyaml
+

@@ -1,0 +1,15 @@
+---
+- name: Upgrade pip
+  command: >
+    pip install --upgrade pip;
+  become: no
+  tags:
+    - python
+
+- name: Install python dependencies
+  pip: name={{ item }} state=present
+  with_items: "{{ python_packages | default() }}"
+  become: yes
+  become_user: root
+  tags:
+    - python
