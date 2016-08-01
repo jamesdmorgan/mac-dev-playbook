@@ -12,7 +12,7 @@ dotfiles_files:
   - .gitconfig
   - .gitignore
   - .inputrc
-#  - .osx
+  - .osx
   - .vimrc
 
 homebrew_installed_packages:
@@ -54,8 +54,11 @@ homebrew_cask_apps:
   - google-chrome
   - dropbox
   - fing
+  - iterm2
+  - lastpass
   - macvim
-  - sublime-text3
+  - spotify
+  - sublime-text3 # managed seperately in role
   - vagrant
   - vagrant-manager
   - vlc
