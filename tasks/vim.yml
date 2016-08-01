@@ -17,7 +17,7 @@
   tags:
     - vim
 
-- name: Clone vim themes
+- name: Clone packages into pathogen bundle directory
   git:
     repo: "{{ item.repo }}"
     dest: "~/.vim/bundle/{{ item.dest }}"
@@ -26,6 +26,7 @@
   with_items:
     - { repo: "git://github.com/altercation/vim-colors-solarized.git", dest: vim-colors-solarized }
     - { repo: "git://github.com/roosta/srcery.git", dest: srcery }
+    - { repo: "git://github.com/scrooloose/nerdtree.git", dest: nerdtree }
   become: no
   tags:
     - vim
