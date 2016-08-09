@@ -20,8 +20,10 @@ homebrew_installed_packages:
   - autoconf
   - bash-completion
   - brew-cask
+  - brew-cask-completion
   - docker
   - docker-machine
+  - docker-completion
   - gettext
   - git
   - gpg
@@ -34,12 +36,15 @@ homebrew_installed_packages:
   - ncdu
   - openssl
   - packer
+  - packer-completion
+  - pip-completion
   - python
   - pv
   - readline
   - sqlite
   - ssh-copy-id
   - tig
+  - vagrant-completion
   - wget
   - wrk
 
@@ -48,6 +53,7 @@ homebrew_taps:
   - homebrew/binary
   - homebrew/dupes
   - homebrew/versions
+  - homebrew/completions
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
@@ -59,6 +65,7 @@ homebrew_cask_apps:
   - iterm2
   - lastpass
   - macvim
+  - magicprefs
   - slack
   - spotify
   - sublime-text3 # managed seperately in role
@@ -72,3 +79,5 @@ python_packages:
   - boto3
   - pyyaml
 
+vagrant_plugins:
+  - vagrant-vbguest
