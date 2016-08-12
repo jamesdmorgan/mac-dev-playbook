@@ -1,0 +1,6 @@
+---
+- name: Install gems
+  gem: name={{ item }} state=latest
+  with_items: "{{ gems }}"
+  tags:
+    - ruby
