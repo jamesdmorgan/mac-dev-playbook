@@ -44,6 +44,7 @@ homebrew_installed_packages:
   - sqlite
   - ssh-copy-id
   - tig
+  - tree
   - vagrant-completion
   - wget
   - wrk
@@ -81,3 +82,7 @@ python_packages:
 
 vagrant_plugins:
   - vagrant-vbguest
+
+gems:
+  - github-pages
+  - bundler

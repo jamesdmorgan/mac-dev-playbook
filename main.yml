@@ -15,6 +15,7 @@
     - include: tasks/vim.yml
     - include: tasks/preferences.yml
     - include: tasks/python.yml
+    - include: tasks/ruby.yml
 
     # TODO: Use sudo once .osx can be run via root with no user interaction.
     - name: Run .osx dotfiles.
