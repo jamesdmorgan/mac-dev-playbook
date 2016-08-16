@@ -31,8 +31,9 @@ homebrew_installed_packages:
   - httpie
   - htop
   - iperf
-  - libevent
+  - jq  # Json processing
   - kdiff3
+  - libevent
   - ncdu
   - openssl
   - packer
