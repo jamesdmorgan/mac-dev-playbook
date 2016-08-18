@@ -21,6 +21,7 @@ homebrew_installed_packages:
   - bash-completion
   - brew-cask
   - brew-cask-completion
+  - cdiff
   - docker
   - docker-machine
   - docker-completion
