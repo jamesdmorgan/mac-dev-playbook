@@ -77,10 +77,11 @@ homebrew_cask_apps:
   - vlc
   #- virtualbox
 
-python_packages:
+pip_packages:
   - awscli
   - boto3
   - pyyaml
+  - riemann-client
 
 vagrant_plugins:
   - vagrant-vbguest
