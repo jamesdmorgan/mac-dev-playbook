@@ -34,6 +34,7 @@ homebrew_installed_packages:
   - iperf
   - jq  # Json processing
   - kdiff3
+  - kindlegen
   - libevent
   - ncdu
   - openssl
@@ -85,6 +86,7 @@ pip_packages:
 
 vagrant_plugins:
   - vagrant-vbguest
+  - vagrant-host-shell
 
 gems:
   - github-pages
