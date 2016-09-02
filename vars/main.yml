@@ -16,15 +16,14 @@ dotfiles_files:
   - .vimrc
 
 homebrew_installed_packages:
-  - ansible
   - autoconf
+  - awscli
   - bash-completion
-  - brew-cask
   - brew-cask-completion
   - cdiff
   - docker
   - docker-machine
-  - docker-completion
+ # - docker-completion
   - gettext
   - git
   - gpg
@@ -33,7 +32,6 @@ homebrew_installed_packages:
   - htop
   - iperf
   - jq  # Json processing
-  - kdiff3
   - kindlegen
   - libevent
   - ncdu
@@ -67,20 +65,24 @@ homebrew_cask_apps:
   - fing
   - flux # f.lux adapt the colour of the display
   - iterm2
+  - kdiff3
   - lastpass
   - macvim
   - magicprefs
   - slack
   - spotify
-  - sublime-text3 # managed seperately in role
+  - sublime-text # managed seperately in role
+  - totalspaces
   - vagrant
   - vagrant-manager
   - vlc
   #- virtualbox
 
 pip_packages:
-  - awscli
+  - ansible
+  - boto
   - boto3
+  - gnupg
   - pyyaml
   - riemann-client
 
@@ -91,3 +93,4 @@ vagrant_plugins:
 gems:
   - github-pages
   - bundler
+  - jekyll

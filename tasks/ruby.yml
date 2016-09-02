@@ -1,5 +1,7 @@
 ---
 - name: Install gems
+  become: yes
+  become_user: root
   gem: name={{ item }} state=latest
   with_items: "{{ gems }}"
   tags:
